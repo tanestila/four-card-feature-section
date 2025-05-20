@@ -1,0 +1,133 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --primary-red: hsl(0, 78%, 62%);
+  --primary-cyan: hsl(180, 62%, 55%);
+  --primary-orange: hsl(34, 97%, 64%);
+  --primary-blue: hsl(212, 86%, 64%);
+  --neutral-grey-500: hsl(234, 12%, 34%);
+  --neutral-grey-400: hsl(212, 6%, 44%);
+  --neutral-white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--neutral-grey-400);
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 105px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 36px;
+  color: var(--neutral-grey-500);
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 36px;
+  font-weight: 200;
+}
+
+.description {
+  width: 520px;
+  font-size: 14px;
+}
+
+.tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 32px;
+  margin-top: 62px;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.tool {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 30px;
+  background-color: var(--neutral-white);
+  width: 350px;
+  text-align: left;
+  height: 250px;
+}
+
+.tool h2 {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.tool p {
+  font-size: 14px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: right;
+  margin-top: 24px;
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+}
+#supervisor {
+  border-top: 5px solid var(--primary-cyan);
+}
+
+#team-builder {
+  border-top: 5px solid var(--primary-red);
+}
+
+#karma {
+  border-top: 5px solid var(--primary-orange);
+}
+
+#calculator {
+  border-top: 5px solid var(--primary-blue);
+}
+
+@media (max-width: 400px) {
+  .tools {
+    flex-direction: column;
+  }
+
+  .description {
+    width: auto;
+  }
+
+  .tool {
+    width: 300px;
+  }
+}
