@@ -58,6 +58,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   flex-direction: row;
   gap: 32px;
   margin-top: 62px;
@@ -79,6 +80,7 @@ body {
   width: 350px;
   text-align: left;
   height: 250px;
+  max-width: 100%;
 }
 
 .tool h2 {
@@ -121,6 +123,7 @@ body {
 @media (max-width: 400px) {
   .tools {
     flex-direction: column;
+    padding-inline: 1rem;
   }
 
   .description {
